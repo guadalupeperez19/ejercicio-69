@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 69 - Utilidades de Arreglos</title>
+    <style>
+        body { font-family: sans-serif; padding: 24px; }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 69: Ordenar y Agrupar Datos</h1>
+    <p>Lista original: <strong id="lista-original"></strong></p>
+    <p>Lista ordenada: <strong id="lista-ordenada"></strong></p>
+
+    <script>
+        const puntajes = [42, 15, 89, 4, 23, 67];
+        const ordenados = [...puntajes].sort((a, b) => a - b);
+
+        document.getElementById("lista-original").textContent = puntajes.join(", ");
+        document.getElementById("lista-ordenada").textContent = ordenados.join(", ");
+        console.log("Ordenados:", ordenados);
+    </script>
+</body>
+</html>
